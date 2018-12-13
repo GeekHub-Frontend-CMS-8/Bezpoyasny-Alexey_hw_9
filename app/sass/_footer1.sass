@@ -1,0 +1,49 @@
+.footer
+  background-color: $main-bg-color
+  &__content
+    width: 100%
+    max-width: 1170px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0 auto
+    padding: 50px 0
+    @media (max-width: 490px)
+      padding: 15px 0
+  &__item-wrap
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    width: 50%
+    @media (max-width: 750px)
+      width: 100%
+      justify-content: center
+    &-social
+      justify-content: flex-end
+    @media (max-width: 750px)
+      justify-content: center
+  &__text
+    margin: 0 30px
+    @media (max-width: 450px)
+      margin: 0 5px
+      line-height: 40px
+  &__link
+    display: block
+    width: 100%
+    max-width: 35px
+    margin-left: 10px
+    @media (max-width: 455px)
+      max-width: 20px
+  &__img
+    width: 100%
+    height: auto
+    opacity: 0.8
+  &__logo
+    width: 100%
+    height: auto
+    &-wrap
+      width: 100%
+      max-width: 80px
+      height: auto
+      @media (max-width: 460px)
+        max-width: 60px
