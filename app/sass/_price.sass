@@ -8,6 +8,7 @@
   align-items: flex-end
   @media (max-width: 1030px)
     flex-wrap: wrap
+
   &__item
     border: 1px solid rgba(221, 221, 221, 0.5)
     width: 32%
@@ -16,33 +17,42 @@
     @media (max-width: 1030px)
       width: 51%
       margin-top: 25px
+
     &-active
       width: 36%
       height: 100%
-    @media (max-width: 1030px)
-      width: 60%
+      @media (max-width: 1030px)
+        width: 60%
+
   &__title-container
     padding: 30px 0
     border-bottom: 1px solid rgba(221, 221, 221, 0.5)
+
     &-active
       padding-top: 55px
       border-top: 5px solid #485563
+
   &__title
     font: 700 $big-font-size $second-font-family
     color: $price-title-color
     text-align: center
+
     &-active
       color: $main-text-color
+
   &__value
     display: block
     font: 400 45px $second-font-family
     color: $price-title-color
+
     &-active
       color: $main-text-color
+
   &__period
     font: 300 $tiny-font-size $main-font-family
     color: $main-text-color
     text-transform: uppercase
+
   &__description
     display: flex
     min-height: 340px
@@ -50,6 +60,7 @@
     flex-direction: column
     align-items: center
     justify-content: center
+
   &__text
     display: flex
     align-items: center
@@ -60,6 +71,7 @@
     flex-grow: 9
     @media (max-width: 1030px)
       padding: 0 10px
+
   &__button
     flex-grow: 0.1
     margin-bottom: 35px
