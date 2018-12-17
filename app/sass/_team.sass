@@ -1,0 +1,77 @@
+.team
+  background: url("../img/team-bg.png") no-repeat center/cover
+
+  &__title, &__text
+    color: $fourth-text-color
+
+  &__line
+    border: 1px solid $fourth-text-color
+    background-color: $fourth-text-color
+
+  &__person\'s-name
+    margin: 30px 0 10px 0
+
+  &__wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    max-width: 1170px
+    margin: 85px auto 0 auto
+    @media (max-width: 680px)
+      justify-content: space-around
+
+  &__item
+    flex-basis: 23%
+    background-color: $main-bg-color
+    opacity: 0.75
+    padding-bottom: 30px
+    @media (max-width: 680px)
+      flex-basis: 39%
+      margin-top: 20px
+    @media (max-width: 400px)
+      flex-basis: 67%
+
+  &__social-list
+    display: inline-flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    max-width: 145px
+    margin-top: 20px
+
+  &__button
+    display: inline-block
+    margin-top: 90px
+
+  &__img
+    width: 100%
+    height: auto
+
+  &__img-wrap
+    position: relative
+    width: 100%
+    max-width: 270px
+
+  &__img-wrap--hover
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    opacity: 0
+    background-image: linear-gradient(to right, #485563 0%, #29323c 100%)
+
+    &:hover
+      opacity: 0.7
+
+  &__button-bio
+    border: none
+
+  .team__line-bio
+    border: 1px solid $fourth-text-color
+    background-color: $fourth-text-color
